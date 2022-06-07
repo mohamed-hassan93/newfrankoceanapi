@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5700
+const PORT = 5700
 
 const albums = {
     'nostalgia': {
@@ -82,6 +82,6 @@ app.get('/api/:album', (req,res)=>{
     }
 })
 
-app.listen(process.env.port || port,() => {
+app.listen(process.env.PORT || PORT ,() => {
     console.log(`we here boyyyyy port: ${port}, let goooooooo`)
 })
