@@ -82,6 +82,6 @@ app.get('/api/:album', (req,res)=>{
     }
 })
 
-app.listen(port,() => {
+app.listen(process.env.port || port,() => {
     console.log(`we here boyyyyy port: ${port}, let goooooooo`)
 })
